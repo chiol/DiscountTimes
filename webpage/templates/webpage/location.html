@@ -1,0 +1,43 @@
+{% extends "webpage/base.html" %}
+{% load static %}
+
+{% block title %}
+할인 타임즈
+{% endblock %}
+
+{% block content %}
+    <nav class="main-tab">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col py-1 selected">
+            <a href="/location">지역별 할인</a>
+          </div>
+          <div class="col py-1">
+            <a href="/business">업종별 할인</a>
+          </div>
+          <div class="col py-1">
+            <a href="/event">이벤트</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="sub-tab">
+      <div class="mx-auto" style="width : 136px;">
+        <label class="switch">
+          <input type="checkbox" >
+          <span class="slider">
+            <span class="ing">진행중</span>
+            <span class="end">종료</span>
+          </span>
+        </label>
+      </div>
+    </nav>
+
+    <main>
+      <img class="img-fluid mx-auto d-block" src="{% static 'images/image_sample1.png' %}" alt="">
+      <img class="img-fluid mx-auto d-block" src="{% static 'images/image_sample1.png' %}" alt="">
+      <img class="img-fluid mx-auto d-block" src="{% static 'images/image_sample1.png' %}" alt="">
+    </main>
+
+{% endblock %}

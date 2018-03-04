@@ -1,0 +1,149 @@
+/* @import url('kopubdotum.css'); */
+
+* {
+  font-weight: 300;
+  font-family: 'KoPub Dotum';
+}
+header {
+  width: auto;
+  height: 54px;
+  background-color: #339dff;
+}
+header .current_location {
+  font-size: 8pt;
+  color: #ffffff;
+}
+.main-tab a {
+  font-size: 11pt;
+  color: #b9b9b9;
+}
+.main-tab .row {
+  width: auto;
+  height: 36px;
+  background-color: #ffffff;
+}
+
+.main-tab .col {
+  border: .5pt solid #e1e1e1;
+}
+
+.main-tab .selected {
+  border-bottom: 1pt solid #339dff;
+}
+.main-tab .selected a {
+  color: #7d7d7d;
+}
+.sub-tab {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: auto;
+  height: 36px;
+  background-color: #fafafa;
+}
+
+.sub-tab .back {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.sub-tab .front {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.sub-tab img {
+  width: auto;
+  height: 50px;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 136px;
+  height: 30px;
+  background: url("../../static/images/toggle_btn_back.png");
+  background-size: 136px 30px;
+  background-repeat: no-repeat;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 68px;
+  left: 0px;
+  bottom: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: url("../../static/images/toggle_btn_front.png");
+  background-size: 68px 30px;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(68px);
+  -ms-transform: translateX(68px);
+  transform: translateX(68px);
+}
+
+.sub-tab .ing {
+  position: absolute;
+  left: 18px;
+  top: 6px;
+  font-size:9pt;
+}
+.sub-tab .end {
+  position: absolute;
+  left : 92px;
+  top: 6px;
+  font-size: 9pt;
+}
+
+input:checked + .slider .end {
+  color : #339dff;
+}
+input:not(:checked) + .slider .ing {
+  color : #339dff;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+}
+
+#top_btn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  /* background: url("../images/top_btn.png"); */
+  background-repeat: no-repeat;
+  bottom: 16px;
+  right: 16px;
+}
+body {
+  background-color: #fafafa;
+}
+main {
+  background-color: #fafafa;
+}
+main img {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
